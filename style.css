@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    font-size: 62.5%;
+    background-color: #e4e4e4;
+}
+
+
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background-color: #ffff;
+    overflow: hidden;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    text-decoration: none;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.74);
+}
+
+.items{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 50px;
+}
+
+ul li {
+    list-style: none;
+}
+
+ul li a{
+    text-decoration: none;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.74);
+}
+
+ul{
+
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-group li{
+    position: relative;
+}
+
+
+.menu-group li a::before{
+    content: "";
+    width: 100%;
+    height: .15rem;
+    background-color: black;
+    position: absolute;
+    top: 25px;
+    left: 0;
+    transition: all .3s ease-in-out;
+    transform: scale(0);
+   
+
+}
+
+.menu-group li a:hover::before{
+    /* width: 100%; */
+    transform: scale(1);
+
+}
+
+.icons{
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+
+}
+
+
+
+
